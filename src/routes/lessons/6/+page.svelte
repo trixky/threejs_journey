@@ -4,7 +4,6 @@
   import { onMount } from "svelte";
   import * as THREE from "three";
   import { OrbitControls } from "three/addons/controls/OrbitControls.js";
-  import gsap from "gsap";
 
   let canvas: any = null;
 
