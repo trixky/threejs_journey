@@ -1,11 +1,17 @@
 <!-- ================================================= SCRIPT -->
 <script lang="ts">
+  import { base } from '$app/paths';
+
   const NUMBER_OF_LESSONS = 67;
   const lessons: number[] = new Array(NUMBER_OF_LESSONS)
     .fill(0)
     .map((_, i) => i + 1);
   const skiped_lessons: number[] = [1, 2];
   const finished_lessons: number[] = [3, 4, 5, 6, 7, 8, 9];
+  console.log(base)
+  console.log(base)
+  console.log(base)
+  console.log(base)
 </script>
 
 <!-- ================================================= CONTENT -->
@@ -28,7 +34,7 @@
         {@const content = lesson.toString().padStart(2, "0")}
         <li class:disabled={skiped} class:finished>
           {#if finished}
-            <a href={`/lessons/${lesson}`}><p>{content}</p></a>
+            <a href={base + `/lessons/${lesson}`}><p>{content}</p></a>
           {:else}
             <p>{content}</p>
           {/if}
