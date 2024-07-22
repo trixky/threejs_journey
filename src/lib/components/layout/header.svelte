@@ -6,8 +6,8 @@
   const lessons: number[] = new Array(NUMBER_OF_LESSONS)
     .fill(0)
     .map((_, i) => i + 1);
-  const skiped_lessons: number[] = [1, 2];
-  const finished_lessons: number[] = [3, 4, 5, 6, 7, 8, 9, 10, 11];
+  const skiped_lessons: number[] = [1, 2, 13];
+  const finished_lessons: number[] = [3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 </script>
 
 <!-- ================================================= CONTENT -->
