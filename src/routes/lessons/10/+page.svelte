@@ -55,19 +55,19 @@
 
     const textureLoader = new THREE.TextureLoader(loadingManager); // NEW
     const colorTexture = textureLoader.load(
-      `${base}/door_wood/color.jpg`,
+      `${base}/textures/door/color.jpg`,
       () => {console.log('load')},
       () => {console.log('progress')},
       () => {console.log('error')}
     ); // NEW
     colorTexture.colorSpace = THREE.SRGBColorSpace // NEW Don't forget to set the color space to sRGB
-    const alphaTexture = textureLoader.load(`${base}/door_wood/alpha.jpg`); // NEW
-    const heightTexture = textureLoader.load(`${base}/door_wood/height.png`); // NEW
+    const alphaTexture = textureLoader.load(`${base}/textures/door/alpha.jpg`); // NEW
+    const heightTexture = textureLoader.load(`${base}/textures/door/height.jpg`); // NEW
     // normal texture need to be in png to avoid artefact from compression // NEW
-    const normalTexture = textureLoader.load(`${base}/door_wood/normal.jpg`); // NEW
-    const ambientTexture = textureLoader.load(`${base}/door_wood/ambient.jpg`); // NEW
-    const metalnessTexture = textureLoader.load(`${base}/door_wood/metalness.jpg`); // NEW
-    const roughnessTexture = textureLoader.load(`${base}/door_wood/roughness.jpg`); // NEW
+    const normalTexture = textureLoader.load(`${base}/textures/door/normal.jpg`); // NEW
+    const ambientTexture = textureLoader.load(`${base}/textures/door/ambientOcclusion.jpg`); // NEW
+    const metalnessTexture = textureLoader.load(`${base}/textures/door/metalness.jpg`); // NEW
+    const roughnessTexture = textureLoader.load(`${base}/textures/door/roughness.jpg`); // NEW
 
     // UV unwrapping // NEW
     // colorTexture.repeat.x = 2; // NEW
