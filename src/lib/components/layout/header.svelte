@@ -7,7 +7,7 @@
     .fill(0)
     .map((_, i) => i + 1);
   const skiped_lessons: number[] = [1, 2, 13];
-  const finished_lessons: number[] = [3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+  const finished_lessons: number[] = [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14];
 </script>
 
 <!-- ================================================= CONTENT -->
@@ -28,7 +28,8 @@
         {@const skiped = skiped_lessons.includes(lesson)}
         {@const finished = finished_lessons.includes(lesson)}
         {@const content = lesson.toString().padStart(2, "0")}
-        <li class:disabled={skiped} class:finished>
+        {@const chap2 = lesson >= 14 && lesson <= 19}
+        <li class:disabled={skiped} class:finished class:chap2>
           {#if finished}
             <a href={base + `/lessons/${lesson}`}><p>{content}</p></a>
           {:else}
@@ -62,6 +63,10 @@
 
   li.finished {
     @apply bg-green-200 hover:bg-green-300;
+  }
+
+  li.chap2.finished {
+    @apply bg-yellow-200 hover:bg-yellow-300;
   }
 
   li:not(.finished) {
