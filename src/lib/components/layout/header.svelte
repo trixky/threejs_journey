@@ -7,7 +7,7 @@
     .fill(0)
     .map((_, i) => i + 1);
   const skiped_lessons: number[] = [1, 2, 13];
-  const finished_lessons: number[] = [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23];
+  const finished_lessons: number[] = [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24];
 </script>
 
 <!-- ================================================= CONTENT -->
@@ -34,7 +34,7 @@
           {#if finished}
             <a href={base + `/lessons/${lesson}`}><p>{content}</p></a>
           {:else}
-            <p>{content}</p>
+            <p >{content}</p>
           {/if}
         </li>
       {/each}
@@ -60,6 +60,10 @@
 
   li.disabled {
     @apply invisible;
+  }
+
+  li:not(.finished) {
+    @apply opacity-20;
   }
 
   li.finished {
