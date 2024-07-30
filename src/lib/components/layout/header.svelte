@@ -6,8 +6,8 @@
   const lessons: number[] = new Array(NUMBER_OF_LESSONS)
     .fill(0)
     .map((_, i) => i + 1);
-  const skiped_lessons: number[] = [1, 2, 13];
-  const finished_lessons: number[] = [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24];
+  const skiped_lessons: number[] = [1, 2, 13, 26];
+  const finished_lessons: number[] = [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 27];
 </script>
 
 <!-- ================================================= CONTENT -->
@@ -30,7 +30,8 @@
         {@const content = lesson.toString().padStart(2, "0")}
         {@const chap2 = lesson >= 14 && lesson <= 19}
         {@const chap3 = lesson >= 20 && lesson <= 26}
-        <li class:disabled={skiped} class:finished class:chap2 class:chap3>
+        {@const chap4 = lesson >= 27 && lesson <= 44}
+        <li class:disabled={skiped} class:finished class:chap2 class:chap3 class:chap4>
           {#if finished}
             <a href={base + `/lessons/${lesson}`}><p>{content}</p></a>
           {:else}
@@ -76,6 +77,10 @@
 
   li.chap3.finished {
     @apply bg-purple-200 hover:bg-purple-300;
+  }
+
+  li.chap4.finished {
+    @apply bg-red-200 hover:bg-red-300;
   }
 
   li:not(.finished) {
