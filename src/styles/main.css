@@ -2,6 +2,10 @@ html, body {
     font-family: monospace;
 }
 
+a.link {
+  @apply text-blue-500 hover:underline ring-offset-[4px];
+}
+
 h1,
 h2,
 h3,
