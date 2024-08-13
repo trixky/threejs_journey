@@ -32,6 +32,7 @@
 		"cannon": "^0.6.2",
 		"gsap": "^3.12.5",
 		"lil-gui": "^0.19.2",
-		"three": "^0.166.1"
+		"three": "^0.166.1",
+		"three-custom-shader-material": "5.4"
 	}
 }
