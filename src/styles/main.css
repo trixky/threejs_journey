@@ -1,5 +1,6 @@
 html, body {
     font-family: monospace;
+    @apply bg-neutral-950;
 }
 
 a.link {

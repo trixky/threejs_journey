@@ -9,14 +9,14 @@
   const skiped_lessons: number[] = [1, 2, 13, 26];
   const finished_lessons: number[] = [
     3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24,
-    25, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45
+    25, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46
   ];
 </script>
 
 <!-- ================================================= CONTENT -->
 <header class="text-center my-10 select-none flex flex-col items-center gap-8">
-  <h1>Three.js Journey Course</h1>
-  <p class="max-w-96">
+  <h1 class="text-white">Three.js Journey Course</h1>
+  <p class="max-w-96 text-neutral-300">
     This is my personal implementations of each lessons from the Three.js
     Journey course by Bruno Simon.
   </p>

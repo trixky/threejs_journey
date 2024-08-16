@@ -11,10 +11,10 @@
 <!-- ================================================= CONTENT -->
 <div id="global" class="w-full flex flex-col items-center">
   <Header />
-  <main class="mb-auto flex flex-col items-center md:w-[900px]">
+  <main class="mb-auto flex flex-col items-center md:w-[900px] pb-10">
     <slot />
   </main>
-  <Footer />
+  <!-- <Footer /> -->
 </div>
 
 <!-- ================================================= CSS -->
