@@ -9,7 +9,7 @@
   const skiped_lessons: number[] = [1, 2, 13, 26];
   const finished_lessons: number[] = [
     3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24,
-    25, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48
+    25, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49
   ];
 </script>
 
@@ -35,6 +35,7 @@
         {@const chap3 = lesson >= 20 && lesson <= 26}
         {@const chap4 = lesson >= 27 && lesson <= 44}
         {@const chap5 = lesson >= 45 && lesson <= 48}
+        {@const chap6 = lesson >= 49 && lesson <= 53}
         <li
           class:disabled={skiped}
           class:finished
@@ -42,6 +43,7 @@
           class:chap3
           class:chap4
           class:chap5
+          class:chap6
         >
           {#if finished}
             <a href={base + `/lessons/${lesson}`}><p>{content}</p></a>
@@ -96,6 +98,10 @@
 
   li.chap5.finished {
     @apply bg-yellow-200 hover:bg-yellow-300;
+  }
+
+  li.chap6.finished {
+    @apply bg-orange-200 hover:bg-orange-300;
   }
 
   li:not(.finished) {
