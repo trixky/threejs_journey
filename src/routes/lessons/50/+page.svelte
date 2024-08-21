@@ -14,7 +14,7 @@
 </script>
 
 <!-- ================================================= CONTENT -->
-<img src={base + "/blender/49/baked_result.jpg"} alt="blender portal img" width={WIDTH}>
+<img src={base + "/blender/49/baked_result_2.jpg"} alt="blender portal img" width={WIDTH}>
 
 <!-- ================================================= CSS -->
 <style lang="postcss">
