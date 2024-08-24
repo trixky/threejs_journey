@@ -244,7 +244,7 @@
     renderer.shadowMap.type = THREE.PCFSoftShadowMap;
     renderer.toneMapping = THREE.ACESFilmicToneMapping;
     renderer.toneMappingExposure = 1;
-    renderer.setSize(WIDTH * pixelRatio, HEIGHT * pixelRatio);
+    renderer.setSize(WIDTH, HEIGHT);
     renderer.setPixelRatio(pixelRatio);
 
     // Clock
