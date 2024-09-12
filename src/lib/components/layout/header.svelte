@@ -8,54 +8,10 @@
     .map((_, i) => i + 1);
   const skiped_lessons: number[] = [1, 2, 13, 26];
   const finished_lessons: number[] = [
-    3,
-    4,
-    5,
-    6,
-    7,
-    8,
-    9,
-    10,
-    11,
-    12,
-    14,
-    15,
-    16,
-    17,
-    18,
-    19,
-    20,
-    21,
-    22,
-    23,
-    24,
-    25,
-    27,
-    28,
-    29,
-    30,
-    31,
-    32,
-    33,
-    34,
-    35,
-    36,
-    37,
-    38,
-    39,
-    40,
-    41,
-    42,
-    43,
-    44,
-    45,
-    46,
-    47,
-    48,
-    49,
-    50,
-    51,
-    52,
+    3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24,
+    25, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44,
+    45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63,
+    64, 65, 66, 67,
   ];
 </script>
 
@@ -82,6 +38,7 @@
         {@const chap4 = lesson >= 27 && lesson <= 44}
         {@const chap5 = lesson >= 45 && lesson <= 48}
         {@const chap6 = lesson >= 49 && lesson <= 53}
+        {@const chap7 = lesson >= 54}
         <li
           class:disabled={skiped}
           class:finished
@@ -90,9 +47,18 @@
           class:chap4
           class:chap5
           class:chap6
+          class:chap7
         >
           {#if finished}
-            <a href={base + `/lessons/${lesson}`}><p>{content}</p></a>
+            {#if chap7}
+              <a
+                target="_blank"
+                href="https://trixky.github.io/threejs_journey_r3f"
+                ><p>{content}</p></a
+              >
+            {:else}
+              <a href={base + `/lessons/${lesson}`}><p>{content}</p></a>
+            {/if}
           {:else}
             <p>{content}</p>
           {/if}
@@ -131,7 +97,7 @@
   }
 
   li.chap2.finished {
-    @apply bg-blue-200 hover:bg-blue-300;
+    @apply bg-indigo-200 hover:bg-indigo-300;
   }
 
   li.chap3.finished {
@@ -148,6 +114,10 @@
 
   li.chap6.finished {
     @apply bg-orange-200 hover:bg-orange-300;
+  }
+
+  li.chap7.finished {
+    @apply bg-blue-200 hover:bg-blue-300;
   }
 
   li:not(.finished) {
