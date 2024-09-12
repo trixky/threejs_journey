@@ -37,8 +37,8 @@
         {@const chap3 = lesson >= 20 && lesson <= 26}
         {@const chap4 = lesson >= 27 && lesson <= 44}
         {@const chap5 = lesson >= 45 && lesson <= 48}
-        {@const chap6 = lesson >= 49 && lesson <= 53}
-        {@const chap7 = lesson >= 54}
+        {@const chap6 = lesson >= 49 && lesson <= 52}
+        {@const chap7 = lesson >= 53}
         <li
           class:disabled={skiped}
           class:finished
