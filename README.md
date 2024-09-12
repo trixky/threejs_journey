@@ -4,7 +4,7 @@ My Implementations of each lessons from the [Three.js Journey](https://threejs-j
 
 <img src="https://raw.githubusercontent.com/trixky/threejs_journey/main/.demo/screenshots.gif" alt="Demo gif" width="600"/>
 
-> This project is [online](trixky.github.io/threejs_journey).
+> This project is [online](https://trixky.github.io/threejs_journey).
 
 > Check the rest of the lessons (react three fiber) [here](https://github.com/trixky/threejs_journey_r3f).
 
