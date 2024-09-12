@@ -4,7 +4,7 @@
 
 <!-- ================================================= CONTENT -->
 <footer
-  class="flex flex-col justify-center items-center mt-4 p-8 w-full bg-black text-white"
+  class="flex flex-col justify-center items-center mt-4 p-8 w-full bg-black"
 >
   <p>Footer</p>
 </footer>

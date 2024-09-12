@@ -162,7 +162,7 @@
 
 <!-- ================================================= CONTENT -->
 <canvas bind:this={canvas} width={WIDTH} height={HEIGHT}></canvas>
-<div class="text-center my-2 text-white">
+<div class="text-center my-2">
   <p>
     Thanks to <a
       class="link"

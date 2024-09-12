@@ -210,7 +210,7 @@
   }
 
   section > h2 {
-    @apply text-white font-bold mx-16;
+    @apply font-bold mx-16;
     font-size: 60px;
   }
 </style>

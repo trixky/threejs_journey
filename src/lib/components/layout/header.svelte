@@ -61,8 +61,8 @@
 
 <!-- ================================================= CONTENT -->
 <header class="text-center my-10 select-none flex flex-col items-center gap-8">
-  <h1 class="text-white">Three.js Journey Course</h1>
-  <p class="max-w-96 text-neutral-300">
+  <h1>Three.js Journey Course</h1>
+  <p class="max-w-96 text-neutral-700">
     This is my personal implementations of each lessons from the Three.js
     Journey course by Bruno Simon.
   </p>
